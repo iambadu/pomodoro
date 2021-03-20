@@ -1,0 +1,55 @@
+.Pomodoro {
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 50px!important;
+    margin: 0 auto;
+    text-align: center;
+    &--states {
+        width: auto;
+        padding: 5px;
+        display: inline-flex;
+        border-radius: 8px;
+        overflow: hidden;
+        background: #00000031;
+        margin-bottom: 20px;
+        li {
+            list-style: none;
+            padding: 8px 20px;
+            &.active {
+                border-radius: 8px;
+                background-color: #E91E63;
+            }
+        }
+        
+    }
+    &--wrap {
+        margin: 0 auto;
+        position: relative;
+        width: 270px;
+        height: 270px;
+    }
+    &--app {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &--digit {
+        font-size: 3.5rem;
+        font-weight: bold;
+    }
+    &--btn {
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        outline: none;
+        transform: all .2s;
+        &-icon {
+            fill: #fff;
+            width: 2.8rem;
+            height: 2.8rem;
+        }
+    }
+        
+}

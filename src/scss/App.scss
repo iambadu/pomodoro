@@ -1,0 +1,17 @@
+@import './base/reset';
+
+body {
+    background: linear-gradient(#20263b, #12141f);
+    color: #fff;
+    padding: 15px;
+}
+
+.app {
+    &--title {
+        text-align: center;
+        font-weight: 600;
+        font-size: 30px;
+        text-transform: capitalize;
+        color: rgb(223, 224, 247);
+    }
+}
