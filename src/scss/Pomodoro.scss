@@ -3,7 +3,7 @@
     width: 100%;
     max-width: 500px;
     margin-top: 50px!important;
-    margin: 0 auto;
+    margin: 0 auto 100px;
     text-align: center;
     &--states {
         width: auto;
@@ -36,7 +36,7 @@
         transform: translate(-50%, -50%);
     }
     &--digit {
-        font-size: 3.5rem;
+        font-size: 4rem;
         font-weight: bold;
     }
     &--btn {
@@ -49,6 +49,103 @@
             fill: #fff;
             width: 2.8rem;
             height: 2.8rem;
+        }
+    }
+    &--settings {
+        &-title {
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 2px;
+            position: relative;
+            &::after {
+            position: absolute;
+            content: "";
+            bottom: -10px;
+            width: 70%;
+            height: 1px;
+            background:rgba(255, 255, 255, 0.534);
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+        }
+        &-head {
+            margin-top: 20px;
+        }
+    }
+   
+    &--settingswrap {
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 10px;
+        &-btn {
+            background: transparent;
+            padding: 0;
+            margin: 0;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            &:focus {
+                outline: none;
+            }
+            svg {
+                display: inherit;
+                fill: #E91E63;
+                background: #fff;
+                border: 3px solid #fff;
+                width: 2.2rem;
+                height: 2.2rem;
+                border-radius: 50%;
+              }
+            &:hover svg {
+                fill: #fff;
+                background: #e91e63;
+                border-color: #e91e63;
+            }
+        }
+        .minwrap {
+            display: block;
+            width: 100px;
+            margin-right: 15px;
+            label {
+                font-size: 12px;
+                text-transform: uppercase;
+                font-weight: 600;
+                padding: 8px 0;
+                display: inline-block;
+
+            }
+            input[type="number"] {
+                font-family: inherit;
+                font-size: 14px;
+                border: none;
+                outline: 0;
+                width: 100%;
+                border-radius: 3px;
+                padding: 5px;
+            }
+        }
+    }
+    &--options {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px 0;
+        &-btn {
+            cursor: pointer;
+            margin: 8px 10px;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 8px 20px;
+            border-radius: 5px;
+            border: 3px solid #E91E63;
+            outline: 0;
+            background: transparent;
+            color: #cccbcb;
+          
         }
     }
         

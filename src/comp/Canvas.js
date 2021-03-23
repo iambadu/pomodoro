@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from 'react';
 
 
-const Canvas = ({min}) => {
+const Canvas = ({active, min}) => {
     const canvasRef = useRef(null);
     
     
@@ -15,7 +15,7 @@ const Canvas = ({min}) => {
         
         ctx.beginPath();
         ctx.arc(135, 135, 120, 0, 2*Math.PI);
-        context.lineWidth = 14;
+        context.lineWidth = 16;
         context.strokeStyle = '#E91E63';
         context.stroke();
         context.lineCap = "round";
@@ -23,7 +23,7 @@ const Canvas = ({min}) => {
         // let eAngl = 2 * (sec / 59) * Math.PI;
         
         ctx.beginPath();
-        ctx.arc(135, 135, 120, 0, min === 25 ? 2 * Math.PI : 2 * (min / 25)  * Math.PI);
+        ctx.arc(135, 135, 120, 0, min === active ? 2 * Math.PI : 2 * (min / active)  * Math.PI);
         context.lineWidth = 6;
         context.strokeStyle = '#fff';
         context.lineCap = "round";
